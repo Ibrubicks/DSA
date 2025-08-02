@@ -6,8 +6,7 @@ class Solution:
         nums.sort()
         count = 1
         maxcount = 1
-        if len(nums)==1:
-            return 1
+        
         for i in range(1,len(nums)):
             if abs(nums[i-1]-nums[i])==1:
                 count+=1
